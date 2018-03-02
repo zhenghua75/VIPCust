@@ -1,0 +1,869 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3901313C-8933-4459-8592-826C7C6D755A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>VCustApp</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>VCustApp</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UseIISExpress>true</UseIISExpress>
+    <UpgradeBackupLocation />
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DundasWebChart">
+      <Name>dundaswebchart</Name>
+      <HintPath>e:\program files\dundas software\charting\webcontrol\bin\dundaswebchart.dll</HintPath>
+      <AssemblyFolderKey>hklm\dundaschartwebcontrol</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessChance\wfmAddChance.aspx.cs">
+      <DependentUpon>wfmAddChance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessChance\wfmAddMan.aspx.cs">
+      <DependentUpon>wfmAddMan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessChance\wfmAddPlan.aspx.cs">
+      <DependentUpon>wfmAddPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessChance\wfmAddRemind.aspx.cs">
+      <DependentUpon>wfmAddRemind.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessChance\wfmAddTrack.aspx.cs">
+      <DependentUpon>wfmAddTrack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessChance\wfmChanceMenu.aspx.cs">
+      <DependentUpon>wfmChanceMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessChance\wfmChanceQuery.aspx.cs">
+      <DependentUpon>wfmChanceQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessChance\wfmChanceReport.aspx.cs">
+      <DependentUpon>wfmChanceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessChance\wfmEndChance.aspx.cs">
+      <DependentUpon>wfmEndChance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessChance\wfmFour.aspx.cs">
+      <DependentUpon>wfmFour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessChance\wfmFourChanceQuery.aspx.cs">
+      <DependentUpon>wfmFourChanceQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessChance\wfmModifyChance.aspx.cs">
+      <DependentUpon>wfmModifyChance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessChance\wfmModifyPlan.aspx.cs">
+      <DependentUpon>wfmModifyPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessChance\wfmModifyRemind.aspx.cs">
+      <DependentUpon>wfmModifyRemind.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessChance\wfmModifyTrack.aspx.cs">
+      <DependentUpon>wfmModifyTrack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessChance\wfmPlanMan.aspx.cs">
+      <DependentUpon>wfmPlanMan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessChance\wfmPlanQuery.aspx.cs">
+      <DependentUpon>wfmPlanQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessChance\wfmRemindQuery.aspx.cs">
+      <DependentUpon>wfmRemindQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessChance\wfmSalesFunnel.aspx.cs">
+      <DependentUpon>wfmSalesFunnel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessChance\wfmTrackQuery.aspx.cs">
+      <DependentUpon>wfmTrackQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessFacade\ChanceFacade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessFacade\Helper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessFacade\LoginFacade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessFacade\SalesManageFacade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessFacade\SysManageFacade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessFacade\VCustInfoFacade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\BusinessException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\ConcurrentException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\ConfigAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\ConnectionPool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\ConstApp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\DataSecurity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\EntityMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\LogAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\ObjectPool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\QueryCondition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\QueryConditionDecorator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\QueryConditionField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\QueryConditionGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\QueryOperationSign.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\QueryOrderCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\SingleTableQuery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\SqlErrorCode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\SqlHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Entity\EntityBase\ColumnAttributes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\EntityBase\ColumnMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\EntityBase\EntityObjectBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\EntityBase\TableAttributes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\EntityBase\TableMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\EntityClass\AccountReceivable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\EntityClass\AdvancePayment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\EntityClass\AreaCode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\EntityClass\BusiLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\EntityClass\Cust.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\EntityClass\Dept.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\EntityClass\Func.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\EntityClass\Link.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\EntityClass\NameCode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\EntityClass\Oper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\EntityClass\OperFunc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\EntityClass\Project.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\EntityClass\SaleCost.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\EntityClass\SerialNo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\EntityClass\Visit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exit.aspx.cs">
+      <DependentUpon>Exit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SalesManage\wfmAccountReceivable.aspx.cs">
+      <DependentUpon>wfmAccountReceivable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManage\wfmAddAccountReceivable.aspx.cs">
+      <DependentUpon>wfmAddAccountReceivable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManage\wfmAddAdvancePayment.aspx.cs">
+      <DependentUpon>wfmAddAdvancePayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManage\wfmAddSaleCost.aspx.cs">
+      <DependentUpon>wfmAddSaleCost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManage\wfmAdvancePayment.aspx.cs">
+      <DependentUpon>wfmAdvancePayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManage\wfmModifyAccountReceivable.aspx.cs">
+      <DependentUpon>wfmModifyAccountReceivable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManage\wfmModifyAdvancePayment.aspx.cs">
+      <DependentUpon>wfmModifyAdvancePayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManage\wfmSaleCost.aspx.cs">
+      <DependentUpon>wfmSaleCost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\wfmAddDept.aspx.cs">
+      <DependentUpon>wfmAddDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\wfmAuthorization.aspx.cs">
+      <DependentUpon>wfmAuthorization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\wfmDeptQuery.aspx.cs">
+      <DependentUpon>wfmDeptQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\wfmModifyDept.aspx.cs">
+      <DependentUpon>wfmModifyDept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\wfmModifyOper.aspx.cs">
+      <DependentUpon>wfmModifyOper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\wfmNewUser.aspx.cs">
+      <DependentUpon>wfmNewUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\wfmNoAuthorization.aspx.cs">
+      <DependentUpon>wfmNoAuthorization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\wfmOperQuery.aspx.cs">
+      <DependentUpon>wfmOperQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\wfmParaFlash.aspx.cs">
+      <DependentUpon>wfmParaFlash.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SysManage\wfmSysManageMenu.aspx.cs">
+      <DependentUpon>wfmSysManageMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VCustInfo\wfmCustRelationDeepReport.aspx.cs">
+      <DependentUpon>wfmCustRelationDeepReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VCustInfo\wfmCustRelationReport1.aspx.cs">
+      <DependentUpon>wfmCustRelationReport1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VCustInfo\wfmCustRelationReport2.aspx.cs">
+      <DependentUpon>wfmCustRelationReport2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VCustInfo\wfmVCustDetail.aspx.cs">
+      <DependentUpon>wfmVCustDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VCustInfo\wfmVCustInfo.aspx.cs">
+      <DependentUpon>wfmVCustInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VCustInfo\wfmVCustLink.aspx.cs">
+      <DependentUpon>wfmVCustLink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VCustInfo\wfmVCustLinkDetail.aspx.cs">
+      <DependentUpon>wfmVCustLinkDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VCustInfo\wfmVCustMenu.aspx.cs">
+      <DependentUpon>wfmVCustMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VCustInfo\wfmVisitAddMod.aspx.cs">
+      <DependentUpon>wfmVisitAddMod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VCustInfo\wfmVisitDetail.aspx.cs">
+      <DependentUpon>wfmVisitDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VCustInfo\wfmVisitInfo.aspx.cs">
+      <DependentUpon>wfmVisitInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfmBase.aspx.cs">
+      <DependentUpon>wfmBase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfmError.aspx.cs">
+      <DependentUpon>wfmError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfmFileUp.aspx.cs">
+      <DependentUpon>wfmFileUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfmMain.aspx.cs">
+      <DependentUpon>wfmMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfmMainTop.aspx.cs">
+      <DependentUpon>wfmMainTop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfmWelcome.aspx.cs">
+      <DependentUpon>wfmWelcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Content Include="BusinessChance\wfmAddChance.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="BusinessChance\wfmAddMan.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="BusinessChance\wfmAddPlan.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="BusinessChance\wfmAddRemind.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="BusinessChance\wfmAddTrack.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="BusinessChance\wfmChanceMenu.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="BusinessChance\wfmChanceQuery.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="BusinessChance\wfmChanceReport.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="BusinessChance\wfmEndChance.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="BusinessChance\wfmFour.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="BusinessChance\wfmFourChanceQuery.aspx" />
+    <Content Include="BusinessChance\wfmModifyChance.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="BusinessChance\wfmModifyPlan.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="BusinessChance\wfmModifyRemind.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="BusinessChance\wfmModifyTrack.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="BusinessChance\wfmPlanMan.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="BusinessChance\wfmPlanQuery.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="BusinessChance\wfmRemindQuery.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="BusinessChance\wfmSalesFunnel.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="BusinessChance\wfmTrackQuery.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="css\DataGrid.css" />
+    <Content Include="css\style.css" />
+    <Content Include="default.aspx" />
+    <Content Include="DLL\DundasWebChart.dll" />
+    <Content Include="DLL\DundasWebChart.xml" />
+    <Content Include="Exit.aspx" />
+    <Content Include="Global.asax">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="image\anniu.jpg" />
+    <Content Include="image\back.jpg" />
+    <Content Include="image\banner.jpg" />
+    <Content Include="image\bg.jpg" />
+    <Content Include="image\btnAdd.gif" />
+    <Content Include="image\btnCancel.gif" />
+    <Content Include="image\btnOk.gif" />
+    <Content Include="image\Change.gif" />
+    <Content Include="image\cry.jpg" />
+    <Content Include="image\Error.gif" />
+    <Content Include="image\fail.png" />
+    <Content Include="image\fail2.jpg" />
+    <Content Include="image\laugh.jpg" />
+    <Content Include="image\login.jpg" />
+    <Content Include="image\newTop_02.jpg" />
+    <Content Include="image\sucess.png" />
+    <Content Include="image\sucess2.jpg" />
+    <Content Include="image\tiao.jpg" />
+    <Content Include="image\yncnc.bmp" />
+    <Content Include="image\yncnc.GIF" />
+    <Content Include="image\yncnc.jpg" />
+    <Content Include="SalesManage\wfmAccountReceivable.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SalesManage\wfmAddAccountReceivable.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SalesManage\wfmAddAdvancePayment.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SalesManage\wfmAddSaleCost.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SalesManage\wfmAdvancePayment.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SalesManage\wfmModifyAccountReceivable.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SalesManage\wfmModifyAdvancePayment.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SalesManage\wfmSaleCost.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="script\calendar.js" />
+    <Content Include="script\datetime.js" />
+    <Content Include="script\scrol.js" />
+    <Content Include="script\购买影响因素表注意事项.files\filelist.xml" />
+    <Content Include="script\购买影响因素表注意事项.files\header.htm" />
+    <Content Include="script\购买影响因素表注意事项.htm" />
+    <Content Include="SysManage\ChangePassword.aspx" />
+    <Content Include="SysManage\wfmAddDept.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\wfmAuthorization.aspx" />
+    <Content Include="SysManage\wfmDeptQuery.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\wfmModifyDept.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\wfmModifyOper.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\wfmNewUser.aspx" />
+    <Content Include="SysManage\wfmNoAuthorization.aspx" />
+    <Content Include="SysManage\wfmOperQuery.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\wfmParaFlash.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SysManage\wfmSysManageMenu.aspx" />
+    <Content Include="VCustInfo\wfmCustRelationDeepReport.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="VCustInfo\wfmCustRelationReport1.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="VCustInfo\wfmCustRelationReport2.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="VCustInfo\wfmVCustDetail.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="VCustInfo\wfmVCustInfo.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="VCustInfo\wfmVCustLink.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="VCustInfo\wfmVCustLinkDetail.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="VCustInfo\wfmVCustMenu.aspx" />
+    <Content Include="VCustInfo\wfmVisitAddMod.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="VCustInfo\wfmVisitDetail.aspx" />
+    <Content Include="VCustInfo\wfmVisitInfo.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Web.config" />
+    <Content Include="wfmBase.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="wfmError.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="wfmFileUp.aspx" />
+    <Content Include="wfmMain.aspx" />
+    <Content Include="wfmMainTop.aspx" />
+    <Content Include="wfmWelcome.aspx" />
+    <EmbeddedResource Include="BusinessChance\wfmAddChance.aspx.resx">
+      <DependentUpon>wfmAddChance.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessChance\wfmAddMan.aspx.resx">
+      <DependentUpon>wfmAddMan.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessChance\wfmAddPlan.aspx.resx">
+      <DependentUpon>wfmAddPlan.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessChance\wfmAddRemind.aspx.resx">
+      <DependentUpon>wfmAddRemind.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessChance\wfmAddTrack.aspx.resx">
+      <DependentUpon>wfmAddTrack.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessChance\wfmChanceMenu.aspx.resx">
+      <DependentUpon>wfmChanceMenu.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessChance\wfmChanceQuery.aspx.resx">
+      <DependentUpon>wfmChanceQuery.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessChance\wfmChanceReport.aspx.resx">
+      <DependentUpon>wfmChanceReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessChance\wfmEndChance.aspx.resx">
+      <DependentUpon>wfmEndChance.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessChance\wfmFour.aspx.resx">
+      <DependentUpon>wfmFour.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessChance\wfmFourChanceQuery.aspx.resx">
+      <DependentUpon>wfmFourChanceQuery.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessChance\wfmModifyChance.aspx.resx">
+      <DependentUpon>wfmModifyChance.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessChance\wfmModifyPlan.aspx.resx">
+      <DependentUpon>wfmModifyPlan.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessChance\wfmModifyRemind.aspx.resx">
+      <DependentUpon>wfmModifyRemind.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessChance\wfmModifyTrack.aspx.resx">
+      <DependentUpon>wfmModifyTrack.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessChance\wfmPlanMan.aspx.resx">
+      <DependentUpon>wfmPlanMan.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessChance\wfmPlanQuery.aspx.resx">
+      <DependentUpon>wfmPlanQuery.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessChance\wfmRemindQuery.aspx.resx">
+      <DependentUpon>wfmRemindQuery.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessChance\wfmSalesFunnel.aspx.resx">
+      <DependentUpon>wfmSalesFunnel.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessChance\wfmTrackQuery.aspx.resx">
+      <DependentUpon>wfmTrackQuery.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="default.aspx.resx">
+      <DependentUpon>default.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exit.aspx.resx">
+      <DependentUpon>Exit.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="SalesManage\wfmAccountReceivable.aspx.resx">
+      <DependentUpon>wfmAccountReceivable.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesManage\wfmAddAccountReceivable.aspx.resx">
+      <DependentUpon>wfmAddAccountReceivable.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesManage\wfmAddAdvancePayment.aspx.resx">
+      <DependentUpon>wfmAddAdvancePayment.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesManage\wfmAddSaleCost.aspx.resx">
+      <DependentUpon>wfmAddSaleCost.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesManage\wfmAdvancePayment.aspx.resx">
+      <DependentUpon>wfmAdvancePayment.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesManage\wfmModifyAccountReceivable.aspx.resx">
+      <DependentUpon>wfmModifyAccountReceivable.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesManage\wfmModifyAdvancePayment.aspx.resx">
+      <DependentUpon>wfmModifyAdvancePayment.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesManage\wfmSaleCost.aspx.resx">
+      <DependentUpon>wfmSaleCost.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\ChangePassword.aspx.resx">
+      <DependentUpon>ChangePassword.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\wfmAddDept.aspx.resx">
+      <DependentUpon>wfmAddDept.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\wfmAuthorization.aspx.resx">
+      <DependentUpon>wfmAuthorization.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\wfmDeptQuery.aspx.resx">
+      <DependentUpon>wfmDeptQuery.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\wfmModifyDept.aspx.resx">
+      <DependentUpon>wfmModifyDept.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\wfmModifyOper.aspx.resx">
+      <DependentUpon>wfmModifyOper.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\wfmNewUser.aspx.resx">
+      <DependentUpon>wfmNewUser.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\wfmNoAuthorization.aspx.resx">
+      <DependentUpon>wfmNoAuthorization.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\wfmOperQuery.aspx.resx">
+      <DependentUpon>wfmOperQuery.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\wfmParaFlash.aspx.resx">
+      <DependentUpon>wfmParaFlash.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysManage\wfmSysManageMenu.aspx.resx">
+      <DependentUpon>wfmSysManageMenu.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VCustInfo\wfmCustRelationDeepReport.aspx.resx">
+      <DependentUpon>wfmCustRelationDeepReport.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VCustInfo\wfmCustRelationReport1.aspx.resx">
+      <DependentUpon>wfmCustRelationReport1.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VCustInfo\wfmCustRelationReport2.aspx.resx">
+      <DependentUpon>wfmCustRelationReport2.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VCustInfo\wfmVCustDetail.aspx.resx">
+      <DependentUpon>wfmVCustDetail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VCustInfo\wfmVCustInfo.aspx.resx">
+      <DependentUpon>wfmVCustInfo.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VCustInfo\wfmVCustLink.aspx.resx">
+      <DependentUpon>wfmVCustLink.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VCustInfo\wfmVCustLinkDetail.aspx.resx">
+      <DependentUpon>wfmVCustLinkDetail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VCustInfo\wfmVCustMenu.aspx.resx">
+      <DependentUpon>wfmVCustMenu.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VCustInfo\wfmVisitAddMod.aspx.resx">
+      <DependentUpon>wfmVisitAddMod.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VCustInfo\wfmVisitDetail.aspx.resx">
+      <DependentUpon>wfmVisitDetail.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VCustInfo\wfmVisitInfo.aspx.resx">
+      <DependentUpon>wfmVisitInfo.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wfmBase.aspx.resx">
+      <DependentUpon>wfmBase.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wfmError.aspx.resx">
+      <DependentUpon>wfmError.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wfmFileUp.aspx.resx">
+      <DependentUpon>wfmFileUp.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wfmMain.aspx.resx">
+      <DependentUpon>wfmMain.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wfmMainTop.aspx.resx">
+      <DependentUpon>wfmMainTop.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wfmWelcome.aspx.resx">
+      <DependentUpon>wfmWelcome.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DLL\Dundas.Charting.WebControl.Chart.lic" />
+    <None Include="SysManage\大客户战略销售工具帮助.mht" />
+    <None Include="xls\_svn\entries" />
+    <None Include="xls\_svn\format" />
+    <None Include="大客户战略销售工具帮助.mht" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="xls\_svn\prop-base\" />
+    <Folder Include="xls\_svn\props\" />
+    <Folder Include="xls\_svn\text-base\" />
+    <Folder Include="xls\_svn\tmp\prop-base\" />
+    <Folder Include="xls\_svn\tmp\props\" />
+    <Folder Include="xls\_svn\tmp\text-base\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v15.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54821/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VCustApp", "VCustApp\VCustApp.csproj", "{3901313C-8933-4459-8592-826C7C6D755A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3901313C-8933-4459-8592-826C7C6D755A}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{3901313C-8933-4459-8592-826C7C6D755A}.Debug|Default.Build.0 = Debug|Any CPU
+		{3901313C-8933-4459-8592-826C7C6D755A}.Release|Default.ActiveCfg = Release|Any CPU
+		{3901313C-8933-4459-8592-826C7C6D755A}.Release|Default.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC8B210A-D064-4D89-9744-11DBD765B173}
+	EndGlobalSection
+EndGlobal
