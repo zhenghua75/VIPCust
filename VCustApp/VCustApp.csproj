@@ -639,7 +639,9 @@
     <Content Include="VCustInfo\wfmVisitInfo.aspx">
       <SubType>Form</SubType>
     </Content>
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="wfmBase.aspx">
       <SubType>Form</SubType>
     </Content>
@@ -832,7 +834,6 @@
     <None Include="SysManage\大客户战略销售工具帮助.mht" />
     <None Include="xls\_svn\entries" />
     <None Include="xls\_svn\format" />
-    <None Include="大客户战略销售工具帮助.mht" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="xls\_svn\prop-base\" />
